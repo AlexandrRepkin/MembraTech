@@ -26,14 +26,14 @@ let path={
         js: sourse_folder+"/js/**/*.js",
         img: sourse_folder+"/img/**/*.{jpg,png,svg,gif,ico,webp}",
     },
-    clean: "./"+project_folder+"/"
+    clean: "./" + project_folder + "/"
 }
 
 let {src,dest}=require('gulp'),
     gulp = require('gulp'),
     browsersync = require("browser-sync").create(),
     fileinclud = require("gulp-file-include"),
-    // del = require("del");
+    del = require("del"),
     scss = require('gulp-sass')(require('sass')),
     autoprefixer = require("gulp-autoprefixer"),
     group_media = require("gulp-group-css-media-queries"),
@@ -195,12 +195,12 @@ function watchFiles() {
     gulp.watch([path.watch.img], images);
 }
 
-// function clean(){
-//     return del(path.clean);
-// }
+function clean(){
+    return del(path.clean);
+}
 
 // let build = gulp.series(clean, html);
-let build = gulp.series(gulp.parallel(js,css,html, images, fonts), fontsStyle);
+let build = gulp.series(clean, gulp.parallel(js,css,html, images, fonts), fontsStyle);
 let watch=gulp.parallel(build, watchFiles, browserSync);
 
 exports.fontsStyle = fontsStyle;
