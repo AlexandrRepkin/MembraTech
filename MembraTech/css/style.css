@@ -86,8 +86,17 @@ h6 {
   font-weight: inherit;
 }
 
+@font-face {
+  font-family: "CenturyGothic-Bold";
+  font-display: swap;
+  src: url("../fonts/CenturyGothic-Bold.woff") format("woff"), url("../fonts/CenturyGothic-Bold.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
 body {
   height: 100%;
+  font-family: "CenturyGothic-Bold";
 }
 
 .wrapper {
