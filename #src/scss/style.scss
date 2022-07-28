@@ -7,7 +7,6 @@
 
 body{
     height: 100%;
-    font-family: 'CenturyGothic-Bold';
     // color: #252B42;
     // font-weight: 500;
     // background-color: #FAFAFA;
@@ -19,7 +18,7 @@ body{
     display: flex;
     flex-direction: column;
 }
-._container{
+.container{
     // max-width: 1046px;
     margin: 0 auto;
     padding: 0 15px;
