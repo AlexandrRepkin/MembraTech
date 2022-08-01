@@ -30,7 +30,7 @@ body{
     flex-direction: column;
 }
 .container{
-    // max-width: 1046px;
+    max-width: 1046px;
     margin: 0 auto;
     padding: 0 15px;
     box-sizing: content-box;
@@ -70,5 +70,36 @@ body{
 
 //-----------------------------------------------------------------------------------------------------------//
 //--------------------------------------------------Footer---------------------------------------------------//
+.footer {
+    width: 100%;
+    padding: 50px 0px 40px 0px;
+    background-color: #0F1693;
+    & span {
+        display: block;
+        text-align: center;
+        color:rgb(168, 168, 168);
+        letter-spacing: 0.5px
+    }
+}
+.footer-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // Если правильно помню, ты говорил, что стараться не мешать паддинги и маржины, поэтому отспут так сделал
+    padding: 0px 0px 20px 0px;
+    &__item {
+        // в прототипе писали Кандару, но мне кажется тут лучше готика
+        font-family: "Centurygothic";
+        font-size: 18px;
+        letter-spacing: 1px;
+        a {
+            color: white;
+            // хз на сколько уместно это, но мне кажется пусть будет
+            &:hover {
+                text-shadow: rgb(255, 255, 255) 1px 0 10px;
+            }
+        }
+    }
+}
 
 //-----------------------------------------------------------------------------------------------------------//
