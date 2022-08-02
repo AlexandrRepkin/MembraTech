@@ -88,16 +88,15 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-family: 'Candara';
     // Если правильно помню, ты говорил, что стараться не мешать паддинги и маржины, поэтому отспут так сделал
     padding: 0px 0px 20px 0px;
     &__item {
         // в прототипе писали Кандару, но мне кажется тут лучше готика
-        font-family: "Centurygothic";
         font-size: 18px;
         letter-spacing: 1.5px;
         a {
             color: white;
-            // хз на сколько уместно это, но мне кажется пусть будет
             &:hover {
                 text-decoration: underline;
             }
