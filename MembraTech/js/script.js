@@ -36,6 +36,11 @@ sublinkMenu.forEach((event)=>{
 //         document.querySelector('body').classList.add('no-webp');
 //     }
 // });
+<<<<<<< HEAD
+=======
+// });
+
+>>>>>>> a160bf4235ef7bf00663c9b1a8e5035755790342
 $(document).ready(function() {
     // СЛАЙДЕР
     $('.news-slider').slick({
@@ -64,3 +69,7 @@ $(document).ready(function() {
     });
 
 });
+<<<<<<< HEAD
+=======
+
+>>>>>>> a160bf4235ef7bf00663c9b1a8e5035755790342
