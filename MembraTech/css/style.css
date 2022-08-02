@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 * {
   padding: 0;
   margin: 0;
@@ -102,6 +104,80 @@ h6 {
   font-style: normal;
 }
 
+/* Слайдер */
+
+/* Слайдер запущен */
+
+/* Слайдер с точками */
+
+/* Ограничивающая оболочка */
+
+.slick-list {
+  overflow: hidden;
+}
+
+/* Лента слайдов */
+
+.slick-track {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+/* Слайд */
+
+/* Слайд активный (показывается) */
+
+.slick-slide.slick-active {
+  width: 270px !important;
+}
+
+/* Слайд основной */
+
+.slick-slide.slick-current + .slick-slide.slick-active {
+  margin: 0px 119px;
+}
+
+/* Слайд по центру */
+
+/* Клонированный слайд */
+
+/* Стрелка */
+
+.slick-arrow {
+  position: absolute;
+  bottom: 0;
+}
+
+.step {
+  position: absolute;
+  bottom: 0;
+  left: 85px;
+}
+
+/* Стрелка влево */
+
+.slick-arrow.slick-prev {
+  left: 0;
+}
+
+/* Стрелка вправо */
+
+.slick-arrow.slick-next {
+  left: 150px;
+}
+
+/* Стрелка не активная */
+
+/* Точки (булиты) */
+
+/* Активная точка */
+
+/* Элемент точки */
+
 body {
   height: 100%;
   font-family: "Centurygothic";
@@ -151,12 +227,13 @@ body {
 }
 
 .title {
-  font-size: 52px;
+  font-size: 36px;
   color: #0F1693;
   margin: 0 auto 60px;
   text-align: center;
 }
 
+<<<<<<< HEAD
 .header {
   position: absolute;
   top: 0;
@@ -332,6 +409,19 @@ body {
 }
 
 .menu-list {
+=======
+.news {
+  width: 100%;
+  padding: 130px 0px 70px;
+}
+
+.news-slider {
+  position: relative;
+  padding: 0px 0px 20px;
+}
+
+.news-slider__item {
+>>>>>>> bae0f1299940da331b3ac30d6c58f03ba3415e62
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -341,6 +431,7 @@ body {
           flex-direction: column;
 }
 
+<<<<<<< HEAD
 .list__item:not(:last-child) {
   margin-bottom: 50px;
 }
@@ -412,6 +503,48 @@ body {
   opacity: 0.7;
   font-size: 18px;
   font-family: "Candara";
+=======
+.card__title {
+  font-size: 19px;
+  line-height: 150%;
+  padding: 0px 0px 5px;
+}
+
+.card__line {
+  width: 100%;
+  height: 1px;
+  background-color: black;
+}
+
+.card__date {
+  font-family: "Candara";
+  font-size: 12px;
+  padding: 3px 0px 15px;
+  color: rgb(133, 133, 133);
+}
+
+.card__image {
+  padding-bottom: 58%;
+}
+
+.card__link {
+  font-family: "Candara";
+  font-size: 14px;
+  color: black;
+  position: relative;
+  padding: 8px 0px 0px;
+}
+
+.card__link::after {
+  content: "";
+  position: absolute;
+  left: 75px;
+  top: 8px;
+  z-index: 10000000;
+  width: 20px;
+  height: 15px;
+  background: url("../img/arrow.png") center center/cover no-repeat;
+>>>>>>> bae0f1299940da331b3ac30d6c58f03ba3415e62
 }
 
 .footer {

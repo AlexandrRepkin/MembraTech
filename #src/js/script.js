@@ -4,6 +4,7 @@ const burger = document.querySelector('.header-burger'),
       sublinkMenu = document.querySelectorAll('.sub'),
       menuLink = document.querySelectorAll('.item__link ');
 
+<<<<<<< HEAD
 burger.addEventListener('click', (event) => {
     burger.classList.toggle('active');
     menuBurger.classList.toggle('active');
@@ -21,6 +22,8 @@ sublinkMenu.forEach((event)=>{
         e.target.parentElement.children[2].classList.remove('active');}
     })
 })
+=======
+>>>>>>> bae0f1299940da331b3ac30d6c58f03ba3415e62
 // function testWebP(callback) {
 //     var webP = new Image();
 //     webP.onload = webP.onerror = function () {
@@ -35,4 +38,38 @@ sublinkMenu.forEach((event)=>{
 //     } else {
 //         document.querySelector('body').classList.add('no-webp');
 //     }
+<<<<<<< HEAD
 // });
+=======
+// });
+
+$(document).ready(function() {
+    // СЛАЙДЕР
+    $('.news-slider').slick({
+        arrows: true,
+        rtl: false,
+        infinite: false,
+        slidesToShow: 3,
+        slidesToScroll: 3
+    });
+    // Подсчет шагов в слайдере
+    let len = $('.news-slider__item').length/3,
+        step = 1;
+    console.log(`${step}/${len}`);
+    $('.slick-prev').after(`<b class="step">${step} / ${len}</b>`);
+    $('.slick-arrow').click(function() {
+        $('.step').remove();
+        if ($(this).hasClass('slick-next') && step < len) {
+            step+=1;
+            console.log(`${step}/${len}`);
+        }
+        if ($(this).hasClass('slick-prev') && step > 1) {
+            step-=1;
+            console.log(`${step}/${len}`);
+        }
+        $('.slick-prev').after(`<b class="step">${step} / ${len}</b>`);
+    });
+
+});
+
+>>>>>>> bae0f1299940da331b3ac30d6c58f03ba3415e62
