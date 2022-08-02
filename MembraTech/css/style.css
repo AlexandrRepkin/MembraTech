@@ -187,5 +187,5 @@ body {
 }
 
 .footer-row__item a:hover {
-  text-shadow: rgb(255, 255, 255) 1px 0 10px;
+  text-decoration: underline;
 }

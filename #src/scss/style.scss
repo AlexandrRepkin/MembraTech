@@ -99,7 +99,7 @@ body{
             color: white;
             // хз на сколько уместно это, но мне кажется пусть будет
             &:hover {
-                text-shadow: rgb(255, 255, 255) 1px 0 10px;
+                text-decoration: underline;
             }
         }
     }
