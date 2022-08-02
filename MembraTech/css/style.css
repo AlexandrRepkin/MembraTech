@@ -104,6 +104,9 @@ h6 {
 
 body {
   height: 100%;
+  color: #0F1693;
+  font-family: "Centurygothic";
+  background-color: #FAFAFA;
 }
 
 .wrapper {
